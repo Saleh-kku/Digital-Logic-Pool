@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boolean Algebra & Combinational Logic - Question Pool (30 Qs)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 16px; background: #f8f9fa; }
+    h1, h2 { color: #2c3e50; }
+    .question { background: #fff; border-radius: 8px; padding: 12px 16px; margin-bottom: 18px; box-shadow: 0 1px 4px #ddd; }
+    .qtype { color: #555; font-size: 98%; }
+    .answer { color: #006400; margin-top: 4px; font-style: italic; }
+    .explanation { color: #333; margin-top: 2px; font-size: 97%; }
+    @media (max-width:600px) {
+      body { margin: 4px; }
+      .question { padding: 9px 6px; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Boolean Algebra & Combinational Logic – Key Question Pool</h1>
+<p><b>Total Questions:</b> 30</p>
+
+<h2>Multiple Choice Questions (MCQ)</h2>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  1. Which of the following is NOT a basic logic gate?<br>
+  A) AND<br>
+  B) OR<br>
+  C) NAND<br>
+  D) ADDER<br>
+  <span class="answer">Answer: D) ADDER</span>
+  <div class="explanation">Adder is a combinational circuit, not a basic logic gate. Basic gates include AND, OR, and NOT.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  2. The output of an OR gate is 1 if:<br>
+  A) All inputs are 1<br>
+  B) At least one input is 1<br>
+  C) All inputs are 0<br>
+  D) Only one input is 1<br>
+  <span class="answer">Answer: B) At least one input is 1</span>
+  <div class="explanation">OR gate outputs 1 if any input is 1, regardless of the rest.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  3. Which Boolean identity expresses the commutative law for AND?<br>
+  A) X + Y = Y + X<br>
+  B) XY = YX<br>
+  C) (X + Y) + Z = X + (Y + Z)<br>
+  D) X + X = X<br>
+  <span class="answer">Answer: B) XY = YX</span>
+  <div class="explanation">Commutative law says the order of variables does not affect the result in AND or OR operations.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  4. Which gate is known as a universal gate because you can build any logic function with it?<br>
+  A) AND<br>
+  B) OR<br>
+  C) NAND<br>
+  D) NOT<br>
+  <span class="answer">Answer: C) NAND</span>
+  <div class="explanation">NAND and NOR are universal gates; any Boolean function can be implemented using only NAND or only NOR gates.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  5. What is the output of a NOT gate if the input is 0?<br>
+  A) 1<br>
+  B) 0<br>
+  <span class="answer">Answer: A) 1</span>
+  <div class="explanation">The NOT gate inverts its input: 0 becomes 1, 1 becomes 0.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  6. Which law allows you to regroup variables without changing the output?<br>
+  A) Distributive<br>
+  B) Associative<br>
+  C) Commutative<br>
+  D) DeMorgan's<br>
+  <span class="answer">Answer: B) Associative</span>
+  <div class="explanation">Associative law: (A+B)+C = A+(B+C) and (AB)C = A(BC).</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  7. Which Boolean expression is in standard Sum of Products (SOP) form?<br>
+  A) (A+B)(A+C)<br>
+  B) AB + AC<br>
+  C) (A+B+C)<br>
+  D) A + B + C<br>
+  <span class="answer">Answer: B) AB + AC</span>
+  <div class="explanation">SOP is a sum (OR) of products (AND terms).</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  8. How many minterms exist for a 3-variable Boolean function?<br>
+  A) 3<br>
+  B) 6<br>
+  C) 8<br>
+  D) 16<br>
+  <span class="answer">Answer: C) 8</span>
+  <div class="explanation">For n variables, there are 2ⁿ minterms; for 3 variables, 2³ = 8.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  9. Which theorem states that (A + B)' = A'B'?<br>
+  A) Commutative Law<br>
+  B) Distributive Law<br>
+  C) DeMorgan's Theorem<br>
+  D) Duality Principle<br>
+  <span class="answer">Answer: C) DeMorgan's Theorem</span>
+  <div class="explanation">DeMorgan’s Theorems are essential for logic circuit simplification and complementing expressions.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  10. What is the output of an XOR gate when both inputs are 1?<br>
+  A) 1<br>
+  B) 0<br>
+  <span class="answer">Answer: B) 0</span>
+  <div class="explanation">XOR gives 1 only when inputs are different.</div>
+</div>
+
+<h2>True or False (TF)</h2>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  11. The Boolean expression X + X = X is an example of the idempotent law.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">Repeating the same variable in OR or AND does not change the result (idempotent law).</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  12. A canonical form of a Boolean function ensures each term contains all input variables either in true or complemented form.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">In canonical SOP or POS, every term includes all variables.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  13. The distributive law states that A(B + C) = AB + AC.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">Distributive law allows multiplication over addition in Boolean algebra, just like arithmetic.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  14. The output of a NOR gate is 1 if at least one input is 1.<br>
+  <span class="answer">Answer: False</span>
+  <div class="explanation">NOR outputs 1 only when all inputs are 0.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  15. In a truth table for a two-input AND gate, the output is 1 only if both inputs are 1.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">AND logic: only '1 AND 1' yields 1.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  16. The order of operations in Boolean algebra is: Parentheses, NOT, AND, OR.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">The correct precedence is Parentheses > NOT > AND > OR.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  17. The sum of minterms representation is also known as the Sum of Products (SOP) form.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">SOP is a sum (OR) of ANDed minterms.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  18. Universal gates can be used to implement any Boolean function.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">NAND and NOR gates are universal; they can construct any logic circuit.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  19. Maxterms are obtained by ANDing all input variables in either complemented or uncomplemented form.<br>
+  <span class="answer">Answer: False</span>
+  <div class="explanation">Maxterms are OR combinations; minterms are AND combinations.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  20. The Exclusive-NOR (XNOR) gate outputs 1 when its inputs are equal.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">XNOR is the complement of XOR; it outputs 1 for equal inputs.</div>
+</div>
+
+<h2>Short Answer Questions</h2>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  21. Write the Boolean expression for a logic circuit with inputs A, B, and C, where the output is high only when exactly two inputs are high.<br>
+  <span class="answer">Answer: (A·B·C') + (A·B'·C) + (A'·B·C)</span>
+  <div class="explanation">Each term covers a unique combination where exactly two inputs are 1.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  22. List any two basic identities of Boolean algebra.<br>
+  <span class="answer">Answer: X + 0 = X; X·1 = X</span>
+  <div class="explanation">These are part of the set of Boolean algebra's basic identities.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  23. What is the dual of the Boolean expression X + YZ?<br>
+  <span class="answer">Answer: X·(Y + Z)</span>
+  <div class="explanation">Duality principle: Replace + with · and vice versa, 0 with 1 and vice versa.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  24. How many rows will a truth table have for a function of 4 variables?<br>
+  <span class="answer">Answer: 16 rows</span>
+  <div class="explanation">A truth table for n variables has 2ⁿ rows; so for 4 variables: 2⁴ = 16.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  25. State DeMorgan’s theorem for two variables.<br>
+  <span class="answer">Answer: (A + B)' = A'·B', and (A·B)' = A' + B'</span>
+  <div class="explanation">These two identities allow us to distribute NOT over AND/OR.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  26. What is a minterm for variables X, Y, Z when X=0, Y=1, Z=1?<br>
+  <span class="answer">Answer: X'·Y·Z</span>
+  <div class="explanation">A minterm is AND of all variables, with each in true or complemented form according to the row.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  27. Write the product-of-sums (POS) form for a function F that is zero for minterms 1 and 2 (for variables A, B).<br>
+  <span class="answer">Answer: F = (A + B')·(A' + B)</span>
+  <div class="explanation">For zeros, use maxterms for those combinations.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  28. What does it mean if a Boolean function is in canonical SOP form?<br>
+  <span class="answer">Answer: Every term in the sum includes all input variables, either in true or complemented form.</span>
+  <div class="explanation">This allows direct mapping to a truth table.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  29. Convert the Boolean expression F = (A + B)(A + C) to SOP form.<br>
+  <span class="answer">Answer: F = A + AB + AC + BC</span>
+  <div class="explanation">Apply distributive law: (A + B)(A + C) = AA + AC + AB + BC = A + AC + AB + BC (AA = A). Then combine like terms.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  30. Draw the symbol and write the truth table for a NOR gate.<br>
+  <span class="answer">Answer: Symbol is an OR gate with a small circle (inversion) at the output. Truth table:<br>
+    0 0 → 1<br>
+    0 1 → 0<br>
+    1 0 → 0<br>
+    1 1 → 0
+  </span>
+  <div class="explanation">NOR gate outputs 1 only when both inputs are 0.</div>
+</div>
+
+</body>
+</html>

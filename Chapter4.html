@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Combinational Logic Circuits – Chapter 4 Question Pool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 16px; background: #f8f9fa; }
+    h1, h2 { color: #2c3e50; }
+    .question { background: #fff; border-radius: 8px; padding: 12px 16px; margin-bottom: 18px; box-shadow: 0 1px 4px #ddd; }
+    .qtype { color: #555; font-size: 98%; }
+    .answer { color: #006400; margin-top: 4px; font-style: italic; }
+    .explanation { color: #333; margin-top: 2px; font-size: 97%; }
+    @media (max-width:600px) {
+      body { margin: 4px; }
+      .question { padding: 9px 6px; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Combinational Logic Circuits – Key Question Pool</h1>
+<p><b>Total Questions:</b> 30</p>
+
+<h2>Multiple Choice Questions (MCQ)</h2>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  1. In a combinational logic circuit, the output depends on:<br>
+  A) The current input values only<br>
+  B) Previous input values<br>
+  C) Feedback from outputs<br>
+  D) Clock signal<br>
+  <span class="answer">Answer: A) The current input values only</span>
+  <div class="explanation">Combinational circuits have no memory or feedback; output is a function of present inputs only.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  2. Which of the following is NOT a combinational logic circuit?<br>
+  A) Half adder<br>
+  B) Multiplexer<br>
+  C) Flip-flop<br>
+  D) Encoder<br>
+  <span class="answer">Answer: C) Flip-flop</span>
+  <div class="explanation">Flip-flop is a sequential circuit with memory; others are purely combinational.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  3. What is the main difference between analysis and design of combinational circuits?<br>
+  A) Analysis starts from a circuit, design starts from a function or specification<br>
+  B) Analysis gives a truth table, design gives a Boolean expression<br>
+  C) Analysis uses K-maps, design does not<br>
+  D) There is no difference<br>
+  <span class="answer">Answer: A) Analysis starts from a circuit, design starts from a function or specification</span>
+  <div class="explanation">In analysis, you determine the function; in design, you create the circuit from requirements.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  4. Which combination of logic gates can implement any combinational circuit?<br>
+  A) Only AND gates<br>
+  B) Only OR gates<br>
+  C) AND, OR, NOT gates<br>
+  D) Only XOR gates<br>
+  <span class="answer">Answer: C) AND, OR, NOT gates</span>
+  <div class="explanation">These three gates form a complete set for Boolean logic.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  5. What are the outputs of a half adder?<br>
+  A) Sum and Carry<br>
+  B) Product and Sum<br>
+  C) XOR and XNOR<br>
+  D) Sum only<br>
+  <span class="answer">Answer: A) Sum and Carry</span>
+  <div class="explanation">Half adder adds two bits and produces sum and carry outputs.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  6. Which is the correct Boolean expression for the sum output of a full adder?<br>
+  A) xy + yz + xz<br>
+  B) x XOR y XOR z<br>
+  C) x AND y AND z<br>
+  D) x + y + z<br>
+  <span class="answer">Answer: B) x XOR y XOR z</span>
+  <div class="explanation">Sum = x ⊕ y ⊕ z in a full adder.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  7. A 3-to-8 line decoder has:<br>
+  A) 3 inputs, 8 outputs<br>
+  B) 8 inputs, 3 outputs<br>
+  C) 3 inputs, 3 outputs<br>
+  D) 8 inputs, 8 outputs<br>
+  <span class="answer">Answer: A) 3 inputs, 8 outputs</span>
+  <div class="explanation">A 3-to-8 decoder produces 8 outputs, one for each input combination.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  8. What does a multiplexer (MUX) do?<br>
+  A) Encodes data<br>
+  B) Selects one of many inputs to pass to the output<br>
+  C) Adds binary numbers<br>
+  D) Decodes data<br>
+  <span class="answer">Answer: B) Selects one of many inputs to pass to the output</span>
+  <div class="explanation">A MUX uses select lines to choose which input appears at the output.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  9. The output of a 2-to-4 decoder is high for:<br>
+  A) All combinations<br>
+  B) No combinations<br>
+  C) Exactly one input combination<br>
+  D) Two input combinations<br>
+  <span class="answer">Answer: C) Exactly one input combination</span>
+  <div class="explanation">Only one output line is high for any input combination in a decoder.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  10. What is the main purpose of an encoder?<br>
+  A) To add binary numbers<br>
+  B) To select one input<br>
+  C) To convert many inputs into a coded output<br>
+  D) To decode binary data<br>
+  <span class="answer">Answer: C) To convert many inputs into a coded output</span>
+  <div class="explanation">An encoder translates active input lines into a binary code.</div>
+</div>
+
+<h2>True or False (TF)</h2>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  11. Combinational circuits can have feedback loops.<br>
+  <span class="answer">Answer: False</span>
+  <div class="explanation">Combinational circuits have no feedback; only sequential circuits do.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  12. The output of a combinational circuit changes immediately when the input changes.<br>
+  <span class="answer">Answer: False</span>
+  <div class="explanation">There is always a propagation delay due to gate switching.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  13. The sum output of a half adder is an XOR function of the inputs.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">Sum = A ⊕ B for a half adder.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  14. A 4-to-16 decoder has 4 outputs.<br>
+  <span class="answer">Answer: False</span>
+  <div class="explanation">It has 16 outputs, one for each input combination.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  15. The carry output of a full adder is high when at least two inputs are high.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">Carry = xy + yz + xz: any two or all three inputs high produces carry out.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  16. In a 4-to-1 multiplexer, there are 4 select lines.<br>
+  <span class="answer">Answer: False</span>
+  <div class="explanation">A 4-to-1 MUX has 2 select lines (since 2² = 4 inputs).</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  17. Encoders and decoders are inverse operations of each other.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">An encoder converts from many lines to a code; a decoder does the reverse.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  18. A demultiplexer routes a single input to one of several outputs, depending on select lines.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">DEMUX is the opposite of MUX, distributing data to one output at a time.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  19. In a seven-segment display, each segment is controlled by a separate output from the decoder.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">Each segment (a–g) is controlled by its own logic output.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  20. Tri-state gates can output a logic high, logic low, or a high-impedance (Hi-Z) state.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">Tri-state gates are used for bus systems and allow "disconnecting" from the bus.</div>
+</div>
+
+<h2>Short Answer Questions</h2>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  21. What is a truth table and why is it important in combinational logic design?<br>
+  <span class="answer">Answer: A truth table lists all possible input combinations and their corresponding outputs. It is essential for analyzing and designing logic circuits.</span>
+  <div class="explanation">It provides a systematic way to specify circuit behavior and derive logic expressions.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  22. Write the Boolean function for the output “S” of a full adder with inputs x, y, z.<br>
+  <span class="answer">Answer: S = x ⊕ y ⊕ z</span>
+  <div class="explanation">Sum output is the XOR of all three inputs.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  23. How many select lines are needed for an 8-to-1 multiplexer?<br>
+  <span class="answer">Answer: 3</span>
+  <div class="explanation">2³ = 8, so 3 select lines are required to address 8 inputs.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  24. In a BCD-to-Excess-3 code converter, what is the output for input 0101 (BCD for 5)?<br>
+  <span class="answer">Answer: 1000</span>
+  <div class="explanation">BCD 5 is 0101, Excess-3 = 5+3 = 8 → 1000.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  25. Give an example of a real-world application for a multiplexer.<br>
+  <span class="answer">Answer: Data selection in communication systems, such as choosing between multiple data sources to send over one line.</span>
+  <div class="explanation">MUXs are used extensively in digital systems to select data sources.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  26. What is the function of a decoder with enable input?<br>
+  <span class="answer">Answer: The decoder outputs are active only when enable is high (or low, depending on design); otherwise, all outputs are inactive.</span>
+  <div class="explanation">Enable input acts as a control to turn the decoder on or off.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  27. Why are "don't care" conditions useful when designing combinational circuits?<br>
+  <span class="answer">Answer: They allow for more flexible simplification, resulting in simpler logic expressions and circuits.</span>
+  <div class="explanation">Don't cares help in K-map grouping, reducing hardware.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  28. What is the advantage of using a tri-state buffer in a bus system?<br>
+  <span class="answer">Answer: It allows multiple devices to share a data bus without interfering with each other by placing outputs in a high-impedance state.</span>
+  <div class="explanation">Tri-state buffers prevent contention and allow only one output at a time.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  29. Draw the block diagram of a 2-to-4 line decoder and label all inputs and outputs.<br>
+  <span class="answer">Answer: Block with 2 inputs (I1, I0), 4 outputs (Y3, Y2, Y1, Y0). Each output is high for one input combination.</span>
+  <div class="explanation">Drawing not shown here; see textbook for standard symbol.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  30. What is the output of a 4-to-1 multiplexer if select lines S1=1, S0=0 and inputs I0=0, I1=1, I2=1, I3=0?<br>
+  <span class="answer">Answer: 1</span>
+  <div class="explanation">S1=1, S0=0 selects input I2, which is 1.</div>
+</div>
+
+</body>
+</html>
