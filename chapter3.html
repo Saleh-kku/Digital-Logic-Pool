@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logic Simplification – Chapter 3 Question Pool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 16px; background: #f8f9fa; }
+    h1, h2 { color: #2c3e50; }
+    .question { background: #fff; border-radius: 8px; padding: 12px 16px; margin-bottom: 18px; box-shadow: 0 1px 4px #ddd; }
+    .qtype { color: #555; font-size: 98%; }
+    .answer { color: #006400; margin-top: 4px; font-style: italic; }
+    .explanation { color: #333; margin-top: 2px; font-size: 97%; }
+    @media (max-width:600px) {
+      body { margin: 4px; }
+      .question { padding: 9px 6px; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Logic Simplification – Key Question Pool</h1>
+<p><b>Total Questions:</b> 30</p>
+
+<h2>Multiple Choice Questions (MCQ)</h2>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  1. What is the primary goal of logic simplification?<br>
+  A) Increase the number of gates<br>
+  B) Use the most variables<br>
+  C) Use the fewest gates possible<br>
+  D) Make the circuit slower<br>
+  <span class="answer">Answer: C) Use the fewest gates possible</span>
+  <div class="explanation">Simplification aims to reduce hardware cost and increase efficiency.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  2. Which Boolean law allows you to combine AB + AB into AB?<br>
+  A) Distributive<br>
+  B) Idempotent<br>
+  C) Absorption<br>
+  D) Complementation<br>
+  <span class="answer">Answer: B) Idempotent</span>
+  <div class="explanation">Idempotent law: X + X = X, XX = X, so AB + AB = AB.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  3. In the expression AB + AC + B, which simplification law is used to reduce B + BC to B?<br>
+  A) Absorption<br>
+  B) Distributive<br>
+  C) Demorgan’s<br>
+  D) Consensus<br>
+  <span class="answer">Answer: A) Absorption</span>
+  <div class="explanation">Absorption law: X + XY = X.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  4. Which of the following best describes a standard SOP form?<br>
+  A) Each product term may have any number of variables<br>
+  B) Every product term contains all variables, true or complemented<br>
+  C) All terms are ORed together<br>
+  D) All variables are complemented<br>
+  <span class="answer">Answer: B) Every product term contains all variables, true or complemented</span>
+  <div class="explanation">Standard SOP ensures all variables appear in every term.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  5. What is the minimum number of cells in a group on a K-map?<br>
+  A) 1<br>
+  B) 2<br>
+  C) 4<br>
+  D) 8<br>
+  <span class="answer">Answer: A) 1</span>
+  <div class="explanation">A group can be just one cell (if no simplification is possible).</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  6. Which of the following is NOT a valid grouping size in a 4-variable K-map?<br>
+  A) 1<br>
+  B) 3<br>
+  C) 4<br>
+  D) 8<br>
+  <span class="answer">Answer: B) 3</span>
+  <div class="explanation">Groups must be powers of 2: 1, 2, 4, 8, 16.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  7. How many minterms are there for a three-variable function?<br>
+  A) 3<br>
+  B) 6<br>
+  C) 8<br>
+  D) 16<br>
+  <span class="answer">Answer: C) 8</span>
+  <div class="explanation">2ⁿ minterms for n variables; here, 2³ = 8.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  8. What does a “don’t care” condition mean in K-map simplification?<br>
+  A) An input must always be 0<br>
+  B) The input is always 1<br>
+  C) The output can be either 0 or 1 for that input combination<br>
+  D) The variable is missing<br>
+  <span class="answer">Answer: C) The output can be either 0 or 1 for that input combination</span>
+  <div class="explanation">"Don't care" cells are used to maximize simplification.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  9. What is the binary representation of the product term A'BC for variables A, B, C?<br>
+  A) 100<br>
+  B) 010<br>
+  C) 011<br>
+  D) 101<br>
+  <span class="answer">Answer: C) 011</span>
+  <div class="explanation">A' = 0, B = 1, C = 1, so 011.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">MCQ</span><br>
+  10. In a standard POS form, what does each sum term represent?<br>
+  A) A minterm<br>
+  B) A maxterm<br>
+  C) An input<br>
+  D) An output<br>
+  <span class="answer">Answer: B) A maxterm</span>
+  <div class="explanation">Each sum term in POS represents a maxterm: a sum of all variables in true/complemented form.</div>
+</div>
+
+<h2>True or False (TF)</h2>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  11. Any Boolean function can be converted into SOP or POS form.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">Standardization is always possible for systematic analysis.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  12. A Karnaugh map for four variables has 16 cells.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">2⁴ = 16; each cell represents a minterm.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  13. In K-map simplification, groups must always be rectangular and powers of 2.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">Groups: 1, 2, 4, 8, etc., and must be adjacent cells.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  14. In a 2-variable K-map, adjacent cells differ by only one variable.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">Cells are arranged in Gray code order, so only one variable changes.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  15. A group of four 1s in a K-map always results in a three-variable product term.<br>
+  <span class="answer">Answer: False</span>
+  <div class="explanation">For a four-variable map, a group of 4 cells eliminates two variables, resulting in a two-variable term.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  16. The minimum SOP expression from a K-map is always unique.<br>
+  <span class="answer">Answer: False</span>
+  <div class="explanation">Different groupings can sometimes yield different but equally minimal expressions.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  17. The consensus theorem is used to eliminate redundant terms in Boolean expressions.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">Consensus theorem helps further minimize expressions.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  18. In a truth table, an SOP expression is ‘1’ for each input combination where at least one product term is ‘1’.<br>
+  <span class="answer">Answer: True</span>
+  <div class="explanation">That is the definition of SOP and how it’s mapped to the truth table.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  19. "Don't care" conditions cannot be used for simplification in K-maps.<br>
+  <span class="answer">Answer: False</span>
+  <div class="explanation">They are included to help create larger groups and achieve simpler expressions.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">TF</span><br>
+  20. The expression (A+B)(A+C) can be expanded to SOP form as A + BC.<br>
+  <span class="answer">Answer: False</span>
+  <div class="explanation">(A+B)(A+C) = AA + AC + BA + BC = A + AC + AB + BC = A + AB + AC + BC (A + AB = A, A + AC = A), but not A + BC directly.</div>
+</div>
+
+<h2>Short Answer Questions</h2>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  21. Describe the steps to convert a non-standard product term to standard SOP form.<br>
+  <span class="answer">Answer: Multiply the term by the sum of each missing variable and its complement, doubling the number of terms each time, until all terms include all variables.</span>
+  <div class="explanation">This ensures every product term has all variables, in either true or complemented form.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  22. What does each cell in a K-map represent?<br>
+  <span class="answer">Answer: Each cell represents a minterm, which is a unique combination of input variable values.</span>
+  <div class="explanation">This allows mapping Boolean expressions and truth tables onto the K-map.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  23. Write the SOP expression for the output being 1 for input combinations 011 and 101 (for A, B, C).<br>
+  <span class="answer">Answer: A'B C + AB'C</span>
+  <div class="explanation">011: A'B C; 101: AB'C.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  24. What is the advantage of using “don’t care” conditions in K-map simplification?<br>
+  <span class="answer">Answer: They allow for larger groups, leading to simpler logic expressions and fewer gates.</span>
+  <div class="explanation">This increases efficiency in circuit design.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  25. What is the difference between an SOP and a POS expression?<br>
+  <span class="answer">Answer: SOP is a sum (OR) of products (AND terms); POS is a product (AND) of sums (OR terms).</span>
+  <div class="explanation">Each has its own standard form and application in circuit design and analysis.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  26. Give an example of a Boolean expression and its simplified form using K-map or Boolean algebra.<br>
+  <span class="answer">Answer: Example: AB + AB' = A</span>
+  <div class="explanation">By applying the distributive law: AB + AB' = A(B + B') = A(1) = A.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  27. How many 1s must be included in every group on a K-map?<br>
+  <span class="answer">Answer: Groups must contain 1, 2, 4, 8, etc. (powers of 2) 1s.</span>
+  <div class="explanation">Grouping must follow the powers-of-two rule for proper simplification.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  28. Write the binary representation for the maxterm A+B'+C for variables A, B, C.<br>
+  <span class="answer">Answer: 101</span>
+  <div class="explanation">A=1, B'=0, C=1.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  29. Explain the process of constructing a truth table from a standard SOP expression.<br>
+  <span class="answer">Answer: List all combinations of variables; for each, check if any product term is 1 for that input, then output is 1; otherwise, output is 0.</span>
+  <div class="explanation">Direct mapping is possible from standard SOP to truth table.</div>
+</div>
+
+<div class="question">
+  <span class="qtype">Short</span><br>
+  30. Describe the steps to design a combinational circuit from a problem statement.<br>
+  <span class="answer">Answer: 1) Derive the truth table from the problem; 2) Write the unsimplified logic expression; 3) Simplify the expression; 4) Draw the logic circuit from the simplified expression.</span>
+  <div class="explanation">This is a systematic approach to digital circuit design.</div>
+</div>
+
+</body>
+</html>
